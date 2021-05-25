@@ -1,0 +1,161 @@
+body{
+    width: 100%;
+    
+}
+
+main{
+   
+    display: flex;
+    width: 100%;
+}
+.container .jumbotron{
+    height: 645px;
+    width: 100%;
+   
+    background-size: cover;
+    background-image: url(./img/nathan-dumlao-71u2fOofI-U-unsplash\ 2.png);
+}
+.container .jumbotron h1{
+    width: 40%;
+    margin-left: 150px;
+    color: white;
+    font-size: 45px;
+    margin-top: 78px;
+}
+.container .jumbotron p{
+    width: 40%;
+    margin-left: 150px;
+    color: white;
+    font-size: 20px;
+    font-style: normal;
+    font-family: 'Rubik', sans-serif;  
+}
+.container .jumbotron button{
+    width: 300px;
+    height: 65px;
+    left: 817px;
+    top: 309px;
+    padding-left: 15px;
+    border-radius: 15px;
+    background: #FFBA33;
+    box-shadow: 0px 6px 20px rgba(255, 186, 51, 0.4);
+    font-weight: 700;
+    font-size: 20px;
+    border-style: none;
+    font-family:"Rubik", sans-serif;
+    color: #6A4029;
+    margin-left: 150px;
+    margin-top: 50px;
+}
+.content{
+    
+    margin-top: 150px;
+    display: flex;
+    width: 100%;
+   
+}
+.content img{
+    width: 50%;
+    margin-left: 150px;
+    align-items: center;
+    justify-content: center;
+}
+.content .desc{
+    width: 50%;
+    margin-left: 80px;
+    font-family: 'Poppins', sans-serif;
+}
+.content .desc h2{
+    font-family: 'Poppins', sans-serif;
+  
+    font-variant: normal;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 50px;
+    
+}
+.content .desc p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    padding-top: 10px;
+}
+.content .desc ul li{
+    list-style-type: none;
+    font-size: 14px;
+    margin-bottom: 15px;
+    padding-top: 5px;
+}
+
+@media screen and (max-width: 576px){
+    .container .jumbotron h1{
+        width: 40%;
+        margin-left: 70px;
+        color: white;
+        font-size: 23px;
+        margin-top: 78px;
+    }
+    .container .jumbotron p{
+        width: 40%;
+        margin-left: 70px;
+        color: white;
+        font-size: 10px;
+        font-style: normal;
+        font-family: 'Rubik', sans-serif;  
+    }
+    .container .jumbotron button{
+        width: 180px;
+        height: 65px;
+        left: 817px;
+        top: 309px;
+        padding-left: 15px;
+        border-radius: 15px;
+        background: #FFBA33;
+        box-shadow: 0px 6px 20px rgba(255, 186, 51, 0.4);
+        font-weight: 700;
+        font-size: 20px;
+        border-style: none;
+        font-family:"Rubik", sans-serif;
+        color: #6A4029;
+        margin-left: 70px;
+        margin-top: 25px;
+    }
+    .container .jumbotron{
+        height: 400px;
+        width: 100%;
+       
+        background-size: cover;
+        background-image: url(./img/nathan-dumlao-71u2fOofI-U-unsplash\ 2.png);
+    }
+    .content{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .content img{
+        width: 70%;
+        margin-left: 70px;
+        align-items: center;
+        justify-content: center;
+    }
+    .content .desc h2{
+        font-family: 'Poppins', sans-serif;
+      
+        font-variant: normal;
+        font-size: 19px;
+        font-weight: 700;
+        line-height: 50px;
+        
+    }
+    .content .desc p{
+        font-family: 'Poppins', sans-serif;
+        font-size: 8px;
+        
+    }
+    .content .desc ul li{
+        list-style-type: none;
+        font-size: 8px;
+        margin-bottom: 15px;
+       
+    }
+}

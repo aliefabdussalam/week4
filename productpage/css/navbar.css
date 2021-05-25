@@ -1,0 +1,251 @@
+body{
+  margin: auto;
+  padding: 0px;
+  font-family: sans-serif;
+}
+.container{
+    width: 100%;
+    background-color: #FFFFFF;
+    box-shadow: 1px 1px 10px #CCCCCC;
+    /* box-shadow: 1px 1px 10px red; */
+    display: flex;
+  }
+
+  .logo{
+    width: 30%;
+    display: flex;
+    /* vertical align */
+    align-items: center; 
+    /* horizontal align */
+    justify-content: center;
+  }
+  .logo h1{
+    font-size: 15px;
+  }
+
+  .primary-menu{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .primary-menu .menu{
+    display: flex;
+    list-style-type: none;
+  }
+  .primary-menu .menu li{
+    margin: 15px;
+    font-size: 13px;
+    font-weight: 400;
+    color: #4F5665;
+    cursor: pointer;
+  }
+  .primary-menu .menu li:hover{
+    color: #6A4029;
+    font-weight: 700;
+  }
+  
+  .secondary-menu{
+    width: 30%;
+  }
+  .secondary-menu .menu{
+    display: flex;
+    list-style-type: none;
+  }
+  .secondary-menu .menu li{
+    margin: 15px;
+    font-size: 13px;
+    cursor: pointer;
+  }
+  .secondary-menu .menu li a{
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .secondary-menu .menu li input{
+    background: #EFEEEE;
+    border-radius: 30px;
+    width: 150px;
+    height: 24px;
+    left: 969px;
+    top: 49px;
+    padding-left: 10px;
+    border-style: none;
+  }
+  
+  .pict_profile{
+      border-radius: 75px;
+  }
+  .nav-mobile{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    box-shadow: 1px 1px 10px #ccc;
+  }
+  /* styling untuk class logo */
+  .logo{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .dropdown{
+    width: 70%;
+    display: flex;
+  }
+  /* styling untuk pembungkus icon hamburger menu-mobile */
+  .icon-menu-mobile{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  /* styling icon hamburger menu-mobile */
+  .icon-menu-mobile img{
+    width: 50px;
+    display: none;
+  }
+
+  /* untuk mengatur supaya primary menu-mobile & secondary menu-mobile menjadi horizontal */
+  .menu-mobile{
+    display: flex;
+    width: 100%;
+  }
+  .primary-menu-mobile{
+    flex-grow: 1;
+  }
+  .primary-menu-mobile ul {
+    list-style-type: none;
+    display: flex;
+  }
+  .primary-menu-mobile ul li{
+    padding: 10px 20px;
+  }
+  .secondary-menu-mobile{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+  }
+  .secondary-menu-mobile ul {
+    list-style-type: none;
+    display: flex;
+  }
+  .secondary-menu-mobile ul li{
+    padding: 10px 20px;
+  }
+  .nav-mobile{
+    display: none;
+  }
+  nav{
+    display: block;
+  }
+  @media screen and (max-width: 576px){
+    /* mengubah icon yang sebelumnya hide menjadi terlihat */
+    .icon-menu-mobile img{
+      display: block;
+    }
+    /* mengatur posisi logo */
+    .logo{
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding-top: 15px;
+      padding-left: 20px;
+    }
+    /* mengubah tampilan menu-mobile menjadi hide */
+    .menu-mobile{
+      display: none;
+    }
+    /* mengubah class icon menu-mobile & class menu-mobile menjadi vertical */
+    .dropdown:hover{
+      display: flex;
+      flex-direction: column;
+    }
+    /* ketika class dropdown di hover, maka class menu-mobile menjadi tampil */
+    .dropdown:hover .menu-mobile{
+      display: flex;
+    }
+    /* agar icon hamburger menu-mobile menjadi di samping kanan */
+    .icon-menu-mobile{
+      display: flex;
+      justify-content: flex-end;
+    }
+    /* agar class menu-mobile menjadi di samping kiri */
+    .menu_mobile{
+      margin-left: -50%;
+      flex-direction: column;
+    }
+    /* mengubah ul menu-mobile yang sebelumnya horizontal menjadi vertical */
+    .primary-menu-mobile ul {
+      flex-direction: column;
+    }
+    /* mengubah posisi ul menu-mobile yang sebelumnya di tengah menjadi di samping kiri */
+    .secondary-menu-mobile{
+      justify-content: flex-start;
+    }
+    /* mengubah ul menu-mobile yang sebelumnya horizontal menjadi vertical */
+    .secondary-menu-mobile ul {
+      flex-direction: column;
+    }
+    .logo{
+      width: 30%;
+      display: flex;
+   
+      justify-content: center;
+    }
+    .logo h1{
+      font-size: 15px;
+    }
+  
+    .primary-menu-mobile{
+      width: 60%;
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+    .primary-menu-mobile .menu-mobile{
+      display: flex;
+      list-style-type: none;
+    }
+    .primary-menu-mobile .menu-mobile li{
+      margin: 15px;
+      font-size: 13px;
+      font-weight: 400;
+      color: #4F5665;
+      cursor: pointer;
+    }
+    .primary-menu-mobile .menu-mobile li:hover{
+      color: #6A4029;
+      font-weight: 700;
+    }
+    
+    .secondary-menu-mobile{
+      width: 30%;
+    }
+    .secondary-menu-mobile .menu-mobile{
+      display: flex;
+      list-style-type: none;
+    }
+    .secondary-menu-mobile .menu-mobile li{
+      margin: 15px;
+      font-size: 13px;
+      cursor: pointer;
+    }
+    .secondary-menu-mobile .menu-mobile li a{
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .secondary-menu-mobile .menu-mobile li input{
+      background: #EFEEEE;
+      border-radius: 30px;
+      width: 150px;
+      height: 24px;
+      left: 969px;
+      top: 49px;
+      padding-left: 10px;
+      border-style: none;
+    }
+    .nav-mobile{
+      display: block;
+    }
+    nav{
+      display: none;
+    }
+  }
